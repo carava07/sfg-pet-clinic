@@ -8,10 +8,10 @@
 		<artifactId>sfg-pet-clinic</artifactId>
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
-	<artifactId>pet-clinic-web</artifactId>
 	<properties>
 		<spring-boot.repackage.skip>true</spring-boot.repackage.skip>
 	</properties>
+	<artifactId>pet-clinic-web</artifactId>
 	<dependencies>
 		<dependency>
 			<groupId>com.springframework</groupId>
@@ -41,15 +41,16 @@
 			<scope>test</scope>
 		</dependency>
 	</dependencies>
-	 <build>
-        <plugins>
-            <plugin>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-maven-plugin</artifactId>
-                <configuration>
-                    <skip>true</skip>
-                </configuration>
-            </plugin>
-        </plugins>
-</build>
+	
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
+				<configuration>
+					<skip>true</skip>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
 </project>
