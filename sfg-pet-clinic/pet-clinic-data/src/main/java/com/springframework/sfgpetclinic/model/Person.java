@@ -7,8 +7,13 @@ package com.springframework.sfgpetclinic.model;
  * @author chaitanyaarava
  *
  */
-public class Person {
+public class Person extends BaseEntity{
 
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 2609819976981306460L;
+	
 	private String firstName;
 	private String lastName;
 	
